@@ -1,0 +1,223 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f7fb;
+    color: #172033;
+    padding-bottom: 70px;
+}
+
+.cricket-navbar {
+    background: #101828;
+}
+
+.login-page {
+    background: linear-gradient(
+        135deg,
+        #101828,
+        #1d2939
+    );
+}
+
+.login-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 22px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.app-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #eef2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 15px;
+}
+
+.form-control {
+    border-radius: 12px;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.tournament-header {
+    background: #101828;
+    color: white;
+    padding: 22px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tournament-header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.tournament-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.section-title {
+    margin-bottom: 12px;
+}
+
+.section-title h4 {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.live-dot {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background: #dc3545;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.live-card {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+}
+
+.team-icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.quick-card {
+    background: white;
+    min-height: 105px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #172033;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.06);
+    transition: .2s;
+}
+
+.quick-card:hover {
+    transform: translateY(-2px);
+}
+
+.quick-card i {
+    font-size: 28px;
+}
+
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background: white;
+    border-top: 1px solid #e4e7ec;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.mobile-bottom-nav a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #667085;
+    font-size: 11px;
+    gap: 2px;
+}
+
+.mobile-bottom-nav i {
+    font-size: 20px;
+}
+
+.mobile-bottom-nav .active {
+    color: #0d6efd;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.05);
+}
+
+.stat-card i {
+    font-size: 25px;
+}
+
+.stat-number {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.admin-action {
+    background: white;
+    min-height: 110px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    color: #172033;
+    box-shadow: 0 4px 15px rgba(0,0,0,.05);
+    font-weight: 600;
+}
+
+.admin-action i {
+    font-size: 28px;
+}
+
+.live-action {
+    background: #dc3545;
+    color: white;
+    min-height: 70px;
+    flex-direction: row;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        padding-bottom: 0;
+    }
+
+    .mobile-bottom-nav {
+        display: none;
+    }
+
+    .login-card {
+        padding: 40px;
+    }
+
+    .tournament-header h1 {
+        font-size: 28px;
+    }
+}
